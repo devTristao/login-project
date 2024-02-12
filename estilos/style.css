@@ -2,7 +2,7 @@
 
 
 :root{
-    --cor0: #6cd3cf;
+    --cor0: #94cfcd;
     --cor1: #49a09d;
     --cor2: #2d6462;
     --cor3: #5f2c82;
@@ -32,7 +32,6 @@ section#login{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
 
     height: 510px;
     width: 250px;
@@ -41,6 +40,7 @@ section#login{
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.490);
 
+    transform: translate(-50%, -50%);
     transition: width 0.3s, height 0.3s;
     transition-timing-function: ease;
 }
@@ -67,6 +67,7 @@ section div#formulario h1{
 
 section div#formulario p{
     font-size: 0.8em;
+    margin: 5px;
 }
 
 form div.campo{
@@ -74,13 +75,36 @@ form div.campo{
     width: 100%;
     height: 40px;
     margin: 5px 0px;
-    border-radius: 5px;
+    border-radius: 8px;
     background-color: var(--cor3);
 
 }
 
 div.campo label{
     display: none;
+}
+
+div.campo span{
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo input{
+    background-color: var(--cor0);
+    font-size: 1em;
+    height: 100%;
+    width: calc(100% - 44.4px);
+    border: 0px;
+    border-radius: 0px 8px 8px 0px;
+    padding: 1px;
+
+    transform: translateY(-10px);
+}
+
+div.campo input:focus-within{
+    background-color: white;
 }
 
 form input[type=submit]{
