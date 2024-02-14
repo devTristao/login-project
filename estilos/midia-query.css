@@ -10,7 +10,6 @@ Grandes telas: Acima de 1200px
 */
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-
     body{
         background-image: linear-gradient(to top, var(--cor1), var(--cor3)  );
     }
@@ -38,7 +37,6 @@ Grandes telas: Acima de 1200px
 }
 
 @media screen and (min-width: 992px) {
-
     body{
         background-image: linear-gradient(to top, var(--cor1), var(--cor3) );
     }
